@@ -1,0 +1,15 @@
+<%- include('./partials/header') %>
+<div class="flex justify-center items-center">
+    <div class=" w-[70%] flex flex-col gap-5 px-20 p-4 mt-10 border shadow">
+    <h1 class="text-zinc-500">Manage your account</h1>
+    <h1 class="text-black-500 text-3xl" >Your account details</h1>
+    <h1 class="text-black-500 text-2xl">Account details</h1>
+    <div class="p-3 border flex-col gap-2 rounded ">
+        <h2>personal</h2>
+        <h2>EMAIL :  <span class="text-zinc-500"><%= (user.email) %></span></h2>
+       <h2>USERNAME :  <span class="text-zinc-500"><%= (user.fullname) %></span></h2>
+        <h2>PRODUCT IN CART :  <span class="text-zinc-500"><%=(user.cart.length)%></span></h2>
+    </div>
+    
+</div>
+</div>
