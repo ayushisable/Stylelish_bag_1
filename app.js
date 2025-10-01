@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const port = 5000;
 
 require("dotenv").config();
 
@@ -41,4 +42,7 @@ app.use("/owners",ownersRouter);
 app.use("/users", usersRouter);
 app.use("/products",productsRouter);
 
-module.exports =app;
+app.listen( port,()=>{
+  console.log('port is 5000');
+  
+})
